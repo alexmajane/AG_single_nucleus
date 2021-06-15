@@ -8,4 +8,4 @@ the first n columns are the cells, and the last 1000 barcodes are the empty drop
 
 *_ortho/ contain the counts for each species after SoupX correction, filtered to 1-to-1-to-1 orthologous genes
 
-unannotated_v2_cleaned.tsv contains SoupX corrected counts for our unannotated Mel genes 
+unannotated_v2_cleaned.tsv contains SoupX corrected counts for our unannotated melanogaster genes 
