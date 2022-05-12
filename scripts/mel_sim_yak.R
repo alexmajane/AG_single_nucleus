@@ -352,32 +352,16 @@ DoHeatmap(
 ## save the unbiased "subpopulations" for a later analysis
 msy_subpops.so <- msy.so
 
-# look at marker genes
+# look at some marker genes
+markers <- c("vvl", 
+             "abd-A",
+             "Acp36DE",
+             "mfas",
+             "SP")
 FeaturePlot(msy.so, 
             reduction = "umap", 
             pt.size = 1, 
-            features = c("vvl"),
-            split.by = "species")
-FeaturePlot(msy.so, 
-            reduction = "umap", 
-            pt.size = 1.5, 
-            features = c("abd-A"),
-            split.by = "species")
-FeaturePlot(msy.so, 
-            reduction = "umap", 
-            pt.size = 1.5, 
-            features = c("Acp36DE"),
-            split.by = "species")
-FeaturePlot(msy.so, 
-            reduction = "umap", 
-            pt.size = 1.5, 
-            features = c("mfas"),
-            split.by = "species")
-FeaturePlot(msy.so, 
-            reduction = "umap", 
-            pt.size = 1.5, 
-            features = c("SP"),
-            split.by = "species")
+            features = markers)
 
 ## merge our cells together for downstream analysis of markers
 msy.so <- RenameIdents(
